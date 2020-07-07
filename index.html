@@ -4,22 +4,41 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>OOP Fundamentals</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/night-owl.css" id="highlight-theme">
+    <link rel="stylesheet" href="plugin/highlight/night-owl.css" id="highlight-theme">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+      .reveal .slides li li {
+        font-size: 0.85em;
+      }
+
+      code {
+        font-family: 'IBM Plex Mono', monospace !important;
+      }
+    </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+        <section>
+          <h1>OOP Fundamentals</h1>
+        </section>
+				<section data-markdown="intro.md" data-separator-vertical="\n\n\n"></section>
 				<section>Slide 2</section>
 			</div>
-		</div>
+    </div>		    
+
+    <footer style="position: fixed; bottom: 8px; margin-left: 8px;">
+      <img src="images/cpu-logo.png" style="width: 64px; height: 64px;" alt="CP Logo">
+      <img src="images/se-logo.jpg" style="width: 64px; height: 64px;" alt="SE Logo">				
+    </footer>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
