@@ -164,3 +164,39 @@ class Dog {
   }
 }
 ```
+
+
+
+### Default Constructors
+
+If you don't write a constructor, many languages will automagically write one for you.
+This is called the **default constructor**, and roughly looks like this:
+
+```dart [2-4]
+class Dog {
+  Dog() {
+    // yup just an empty constructor with no parameters
+  }
+}
+```
+
+That's why you can still _"construct"_ objects in your main function using `new Dog()` or `Dog()`
+
+
+
+### Instantiating with non-default constructors
+
+It's as easy as giving it the arguments it requires.
+
+```dart [1-3]
+var dog1 = Dog('Tucker Budzyn', 'Golden Retriever', 55);
+print("LOOK: there's ${dog1.name} the ");
+print('${dog1.dominantColor} ${dog1.breed}');
+
+var dog2 = Dog('Maya Polar Bear', 'Samoyed', 60);
+// constructor did not ask for a dominant color
+// but the default is brown, and Maya is white
+dog2.dominantColor = 'white';
+print("LOOK: there's ${dog2.name} the ");
+print('${dog2.dominantColor} ${dog2.breed}');
+```
