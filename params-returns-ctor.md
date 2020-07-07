@@ -188,7 +188,7 @@ That's why you can still _"construct"_ objects in your main function using `new 
 
 It's as easy as giving it the arguments it requires.
 
-```dart [1-3]
+```dart [1-3 | 5-10]
 var dog1 = Dog('Tucker Budzyn', 'Golden Retriever', 55);
 print("LOOK: there's ${dog1.name} the ");
 print('${dog1.dominantColor} ${dog1.breed}');
