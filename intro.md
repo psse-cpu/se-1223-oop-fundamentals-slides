@@ -215,6 +215,9 @@ You do rightDog as an exercise
 
 
 
+## Our three dogs all sound the same, producing an "Arf!" sound, and we can't even tell who barks
+
+
 
 ### Exercise: Make small dogs bark Yip, medium dogs bark Arf, large ones bark Woof, show the source
 
