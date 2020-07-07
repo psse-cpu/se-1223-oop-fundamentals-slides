@@ -200,7 +200,7 @@ No more *flat dogs 🐕🐕🐕*!
 
 ### Solution 01 drawbacks, continued
 
-And classes won't do validation will usually look like:
+Classes that won't do validation will usually look like:
 <small>Fearing that change of mind later on.</small>
 
 ```dart [2-10 | 12-20]
