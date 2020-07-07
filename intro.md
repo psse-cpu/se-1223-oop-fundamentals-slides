@@ -33,6 +33,20 @@
 
 
 
+### Your turn:  a _______ is an object
++ it has state (**instance variables**)
+  - _________
+  - _________
+  - _________
+  - _________
+  - _________
++ it has behavior (**methods**)
+  - _________
+  - _________
+  - _________
+
+
+
 ## You write a class to define what an object means in your application
 
 + three parts in general
