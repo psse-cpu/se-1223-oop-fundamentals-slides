@@ -198,7 +198,7 @@ Methods are just Dart functions, just like when you write `void main()`.
   leftDog.weight = 35;
   leftDog.dominantColor = 'white';
 
-  // in Dart, `new` is optional and recommended
+  // in Dart, it is recommended to omit `new` (it's optional)
   // especially when instantiating Flutter widgets
   var middleDog = Dog(); // Python anyone?
   middleDog.name = 'Mel';
