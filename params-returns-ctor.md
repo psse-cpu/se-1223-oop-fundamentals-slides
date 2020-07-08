@@ -39,7 +39,7 @@ girlDog.eat(5, 'chimken'); // supplied when calling `eat`
     rice, pork, beef
 
 2.  Modify the bark() method to accept an integer parameter indicating how many times a dog keeps
-    on barking.  Add another boolean argument dictating if the bark is angry (ALLCAPS) or normal.
+    on barking.  Add another boolean parameter dictating if the bark is angry (ALLCAPS) or normal.
 
 3.  Add a method to make a dog sit.  Add a parameter indicating a delay in seconds in obeying the
     `sit` command.  Simulate the delay with text.
