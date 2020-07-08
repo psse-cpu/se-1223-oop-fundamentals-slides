@@ -361,3 +361,11 @@ print('r = ${circle.radius}, A = ${circle.area}');
 // you can't do this, area is only a getter, no setter
 circle.area = 100; 
 ```
+
+
+
+## DO:  Read Effective Dart's Guide on when to use getters vs methods
+
+[this one 😊](https://dart.dev/guides/language/effective-dart/design#members)
+
+That link is also in the home page (and syllabus) of our Canvas course.
