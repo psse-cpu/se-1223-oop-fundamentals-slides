@@ -16,8 +16,8 @@ class Dog {
 And this in our `main` func:
 
 ```dart
-  var dog = Dog();
-  dog.height = 15;
+var dog = Dog();
+dog.height = 15;
 ```
 
 Not bad right?
