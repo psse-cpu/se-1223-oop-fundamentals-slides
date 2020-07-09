@@ -253,7 +253,7 @@ But what if I want required named params? <!-- .element class="fragment" -->
 
 
 
-### Solution 02:  Use the `@required` annotation from the `meta` package
+### Solution 02:  `@required` annotation 
 
 ```yaml
 dependencies:
