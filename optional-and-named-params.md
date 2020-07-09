@@ -249,9 +249,7 @@ dog.eat(food: 'brocolli');
 // Dog is eating 1 unit(s) of brocolli.
 ```
 
-But what if... <!-- .element class="fragment" -->
-
-I want required named params? <!-- .element class="fragment" -->
+But what if I want required named params? <!-- .element class="fragment" -->
 
 
 
@@ -263,7 +261,7 @@ dependencies:
   meta: ^1.2.2   # install the meta package from pub.dev
 ```
 
-```dart
+```dart [4-6 | 9-12 | 14-16]
 import 'package:meta/meta.dart';
 
 class Dog {
@@ -271,6 +269,11 @@ class Dog {
     print("Dog is eating $quantity unit(s) of $food.");
   }
 }
+
+// main.dart
+dog.eat();
+dog.eat(quantity: 3);
+dog.eat(food: 'brocolli');
 
 // Dog is eating null unit(s) of null.
 // Dog is eating 3 unit(s) of null.
