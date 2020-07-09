@@ -257,15 +257,17 @@ But what if I want required named params? <!-- .element class="fragment" -->
 
 ```yaml
 dependencies:
-  intl: ^0.16.1
   meta: ^1.2.2   # install the meta package from pub.dev
 ```
 
-```dart [4-6 | 9-12 | 14-16]
+```dart [4-10 | 12-15 | 17-19]
 import 'package:meta/meta.dart';
 
 class Dog {
-  void eat({ @required int quantity, @required String food }) {
+  void eat({ 
+    @required int quantity, 
+    @required String food 
+  }) {
     print("Dog is eating $quantity unit(s) of $food.");
   }
 }
