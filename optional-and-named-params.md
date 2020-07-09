@@ -239,6 +239,11 @@ class Dog {
   }
 }
 
+// main.dart
+dog.eat();
+dog.eat(quantity: 3);
+dog.eat(food: 'brocolli');
+
 // Dog is eating 1 unit(s) of something.
 // Dog is eating 3 unit(s) of something.
 // Dog is eating 1 unit(s) of brocolli.
