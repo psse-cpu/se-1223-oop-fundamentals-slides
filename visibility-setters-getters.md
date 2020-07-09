@@ -282,7 +282,7 @@ class Dog {
   }
 
   // Step 4: write a getter
-  get height { // note Dart has NO paren but JS has
+  int get height { // note Dart has NO paren but JS has
     return _height;
   }
 }
@@ -369,3 +369,56 @@ circle.area = 100;
 [this one 😊](https://dart.dev/guides/language/effective-dart/design#members)
 
 That link is also in the home page (and syllabus) of our Canvas course.
+
+
+
+### Private methods
+
+You can make methods private, if you intend it only as a helper, 
+or for factoring out repetitive code.
+
+```dart [4-12 | 14-17 | 19-24 | 29-34]
+class Dog {
+  String name;
+  String _mood;
+
+  void _wagTail() {
+    var direction = 'left';
+
+    for (var i = 0; i < 20; i++) {
+      direction = direction == 'left' ? 'right' : 'left';
+      print("$name's tail goes $direction");
+    }
+  }
+
+  void welcomeOwner() {
+    print('$name jumps on owner');
+    _wagTail();
+  }
+
+  set mood(String mood) {
+    _mood = mood;
+    if (['happy', 'playful', 'excited'].contains(mood)) {
+      _wagTail();
+    }
+  }
+
+  String get mood { return _mood; }
+}
+
+// main.dart
+dog.welcomeOwner(); // wags tail
+dog.mood = 'happy'; // wags tail
+dog.mood = 'hungry'; // doesn't wag tail
+dog._wagTail(); // compile error, _wagTail is private
+// can't make a dog wag its tail directly
+```
+
+
+
+### Setters and Getters are the Most Basic Form of Encapsulation
+
+Encapsulation allows you (or others) to **change one part** of the code 
+**without affecting other parts**.
+
+![pillars](images/pillars.jpeg)
