@@ -1,6 +1,10 @@
 Member Visibility and Encapsulation
 -----------------------------------
 
+
+
+### We designed our perfect Dog class
+
 Say we have this dog class:
 
 ```dart
