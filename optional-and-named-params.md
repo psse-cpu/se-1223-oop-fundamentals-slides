@@ -210,8 +210,8 @@ class Dog {
 dog.eat(quantity: 1, food: 'banana');  // ✔ OK 
 dog.eat(food: 'chimken', quantity: 5); // ✔ also OK
 
-// Dog is eating unit(s) 1 of banana.
-// Dog is eating unit(s) 5 of chimken.
+// Dog is eating 1 unit(s) of banana.
+// Dog is eating 5 unit(s) of chimken.
 ```
 
 <pre class="fragment">
