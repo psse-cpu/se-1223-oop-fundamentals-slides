@@ -84,6 +84,27 @@ void barkRepeatedly(int times) {
 
 
 
+### An improvement?
+
+```dart
+void barkOnce() {
+  // complicated animation logic
+  // play sound, depending on the dog's size and mood
+  // while ensuring it's in-sync with the animation
+}
+
+void barkRepeatedly(int times) {
+  for (var i = 0; i < times; i++) {
+    barkOnce();
+  }
+}
+```
+
+Well, the methods are still named `barkOnce` and `barkRepeatedly`.  Maybe we should stick with
+naming our method just `bark`.
+
+
+
 ### Making # of times optional
 
 ```dart [1-2 | 5-15 | 18-21]
@@ -301,5 +322,5 @@ Surprise!  It still runs! 😱😱😱  <!-- .element class="fragment" -->
 * So don't worry if `@required` named params are not part of Dart's core
   - if you forget to specify required named params, the linter will let you know
   - it can check for other stuff as well
-* Pass this course, and you can take SE 2224 (Software Engineering Tools and Practices) first sem.
+* Pass this course, and you can take SE 2124 (Software Engineering Tools and Practices) first sem.
 * We'll get to learn more about linters such `dartanalyzer`.
