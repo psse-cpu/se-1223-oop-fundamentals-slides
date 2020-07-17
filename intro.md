@@ -27,6 +27,23 @@ Object-oriented Programming Fundamentals
 
 
 
+### Outline
+
+* working with a single class
+  - classes, instance variables, methods
+  + parameters
+  + return values
+  - constructors
+  - member visibility and encapsulation
+    - setter/getter approaches
+    - computed properties
+    - private methods
+  - optional parameters
+  - named parameters
+  - pub.dev packages
+
+
+
 ### Computers dunno what dogs are
 ![dogs](images/dogs.jpg)
 
